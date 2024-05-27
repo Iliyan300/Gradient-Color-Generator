@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    
+    <main>
+        <section class="first-section">
+        <h1>Background Generator</h1>
+        <p>To Right</p>
+       <div class="input-wrapper">
+        <input type="color" name="color1" value="#d152ff" class="color-1">
+        <input type="color" name="color2" value="#0a0b0a" class="color-2">
+    </div>
+        <h2>Current CSS background</h2>
+        <h3 id="textToCopy" class="first-sec-h3"></h3>
+       
+        <div class="button-wrapper">
+        <button class="copybtn-1 bi bi-copy"></button>
+        <button class="random-colors-btn bi bi-shuffle"></button>
+        <button class="reverse-btn bi bi-arrow-left-right"></button>
+        
+        <i class="bi bi-check hidden" id="sec-one-i"></i>
+    </div>
+    <a href="#section-2" onclick="smoothScroll()"><i class="bi bi-arrow-down-circle" id="arrow-down"></i></a>
+</section>
+<section class="section-two" id="section-2">
+    <h1>Background Generator</h1>
+    <p>To Top</p>
+    <div class="input-wrapper">
+    <input type="color" name="color1" value="#fcff52" class="color-3">
+    <input type="color" name="color2" value="#191515" class="color-4">
+    </div>
+    <h2>Current CSS background</h2>
+    <h3 id="textToCopy-2" class="second-sec-h3"></h3>
+   
+    <div class="button-wrapper">
+    <button class="copybtn-2 bi bi-copy"></button>
+    <button class="random-colors-btn bi bi-shuffle"></button>
+    <button class="reverse-btn-2 bi bi-arrow-down-up"></button>
+    
+    <i class="bi bi-check hidden" id="sec-two-i"></i>
+</div>
+</section>
+</main>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
