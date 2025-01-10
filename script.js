@@ -89,7 +89,6 @@ function changeColorsToBottom() {
     }
    
 }
-
 // copying text for section one //
 
 function copyText() {
@@ -101,7 +100,7 @@ function copyText() {
     popUp
 
     ).catch(err => {
-        console.error('Грешка при копиране на текста: ', err);
+        console.error(err);
     });
 }
 
@@ -117,7 +116,7 @@ navigator.clipboard.writeText(textToCopy2).then(
     popUpTwo
 
     ).catch(err => {
-        console.error('Грешка при копиране на текста: ', err);
+        console.error(err);
     });
 
 }
